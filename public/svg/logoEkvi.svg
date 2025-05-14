@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="svg1" version="1.1" viewBox="79.48440677966101 126.63367199999999 52.20338983050848 24.354000000000003" style="max-height: 500px" width="52.20338983050848" height="24.354000000000003">
+  
+  <defs id="defs1">
+    <rect id="rect1" height="230.81184" width="546.2069" y="365.57154" x="206.4404"/>
+  </defs>
+  <g id="layer1">
+    <text style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:Roboto;-inkscape-font-specification:'Roboto, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect1);fill:#000000;fill-opacity:0.64397907" id="text1" transform="matrix(0.2645833,-1.2506238e-4,1.2506238e-4,0.2645833,27.257301,22.417908)" xml:space="preserve"><tspan id="tspan3" y="449.57227" x="206.43945">экви</tspan></text>
+    <text id="text2" y="147.24889" x="88.912575" style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Roboto;-inkscape-font-specification:'Roboto, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:0.643979;stroke-width:0.264583" xml:space="preserve"><tspan y="147.24889" x="88.912575" style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Roboto;-inkscape-font-specification:'Roboto, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583" id="tspan2">метры-время</tspan></text>
+    <rect y="128.6299" x="62.091286" height="1.2069581" width="96.82486" id="rect2" style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"/>
+    <rect y="130.72595" x="62.101803" height="1.2069581" width="96.82486" id="rect2-8" style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"/>
+    <rect y="132.87709" x="62.182545" height="1.2069581" width="96.82486" id="rect2-5" style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"/>
+    <rect y="135.02634" x="62.116322" height="1.2069581" width="96.82486" id="rect2-5-1" style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"/>
+    <rect y="137.09219" x="62.067417" height="1.2069581" width="96.82486" id="rect2-5-7" style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"/>
+    <rect y="139.17084" x="62.177124" height="1.2069581" width="96.82486" id="rect2-5-2" style="fill:#ffffff;fill-opacity:1;stroke-width:0.264583"/>
+  </g>
+</svg>

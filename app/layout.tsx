@@ -1,14 +1,28 @@
 import type React from "react"
 import "./globals.css"
-import { Inter } from "next/font/google"
+import localFont  from "next/font/local"
 import { ThemeProvider } from "@/components/theme-provider"
 
-const inter = Inter({ subsets: ["latin", "cyrillic"] })
+const GreenHillSans = localFont({
+  src: [
+    {
+      path: "../public/fonts/GreenHillSans.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/GreenHillSans.ttf",
+      weight: "700",
+      style: "normal",
+    }
+  ],
+  display: "swap",
+});
 
 export const metadata = {
   title: "ICBCoin - International Crypto Bank Coin",
   description: "Инновационная модель дохода и новый вид недвижимости",
-    generator: 'v0.dev'
+    generator: 'SokolikTeam'
 }
 
 export default function RootLayout({
@@ -18,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={GreenHillSans.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
