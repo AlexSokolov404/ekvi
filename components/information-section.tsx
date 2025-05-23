@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "./animated-section";
 
 // Tab content types
-type TabType = "opportunities" | "howItWorks" | "facts";
+type TabType = "opportunities" | "howItWorks" | "facts" | "ekvi";
 
 export default function InformationSection() {
   const [activeTab, setActiveTab] = useState<TabType>("opportunities");
@@ -70,6 +70,18 @@ export default function InformationSection() {
               whileTap={{ scale: 0.95 }}
             >
               АРГУМЕНТЫ И ФАКТЫ
+            </motion.button>
+            <motion.button
+              className={`px-6 py-3 rounded-full text-sm font-medium transition-colors ${
+                activeTab === "ekvi"
+                  ? "bg-gray-400 text-white"
+                  : "bg-gray-200 hover:bg-gray-300"
+              }`}
+              onClick={() => setActiveTab("ekvi")}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              ЭКВИ
             </motion.button>
           </div>
         </AnimatedSection>
@@ -489,14 +501,14 @@ export default function InformationSection() {
 
                 {/* Accordion Item 4 */}
                 <AnimatedSection delay={0.4}>
-                <div className="bg-gray-300 rounded-lg overflow-hidden">
+                  <div className="bg-gray-300 rounded-lg overflow-hidden">
                     <motion.button
                       className="w-full p-6 flex justify-between items-center"
                       onClick={() => toggleAccordion("item4")}
                       whileHover={{ backgroundColor: "rgba(0,0,0,0.05)" }}
                     >
                       <h3 className="text-sm md:text-lg font-bold">
-                      НЕ УПУСТИТЕ ВОЗМОЖНОСТЬ СТАТЬ ЧАСТЬЮ ИННОВАЦИЙ
+                        НЕ УПУСТИТЕ ВОЗМОЖНОСТЬ СТАТЬ ЧАСТЬЮ ИННОВАЦИЙ
                       </h3>
                       <motion.div
                         animate={{ rotate: isExpanded("item4") ? 180 : 0 }}
@@ -526,6 +538,51 @@ export default function InformationSection() {
                     </AnimatePresence>
                   </div>
                 </AnimatedSection>
+              </div>
+            </motion.div>
+          )}
+
+          {activeTab === "ekvi" && (
+            <motion.div
+              key="ekvi"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="space-y-4">
+                <div className="p-6 text-xs md:text-sm flex flex-col gap-4 bg-gray-200 rounded-lg overflow-hidden">
+                  <p>
+                    ЭКВИ — это готовый бизнес и больше чем просто валюта,
+                    которая сочетает в себе два номинала: ЭК (Эксклюзивный
+                    Кондоминиум) и ВИ (Время Использования).
+                  </p>
+                  <p>
+                    ЭК представляет собой минимальную долю доходной
+                    недвижимости, позволяя участникам владеть частью
+                    недвижимости и получать доход от её использования.{" "}
+                  </p>
+                  <p>
+                    ВИ представляет собой активную часть валюты, которая
+                    учитывает время использования недвижимости и растет, когда
+                    требуется больше время использования доходной недвижимости.
+                  </p>
+                  <p>
+                    Новые ЭКВИ появляющиеся на балансе участников является
+                    результатом работы двух номиналов и дилчейна.
+                  </p>
+                  <p>
+                    После уравнивания балансов, что происходит через
+                    автоматический выкуп номинала ВИ держателями или управляющей
+                    компанией, они снова появляются в обороте, но уже по новой
+                    цене, образуя новые пары с номиналом ЭК.
+                  </p>
+                  <p>
+                    Это делает ЭКВИ идеальным средством как для продавцов,
+                    желающих быстро продать недвижимость, так и для покупателей
+                    с небольшим бюджетом.
+                  </p>
+                </div>
               </div>
             </motion.div>
           )}

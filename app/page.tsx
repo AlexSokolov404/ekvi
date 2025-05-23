@@ -10,6 +10,24 @@ import Footer from "@/components/footer";
 import AnimatedSection from "@/components/animated-section";
 import MobileMenu from "@/components/mobile-menu";
 import { useRef } from "react";
+import localFont from "next/font/local";
+import Link from "next/link";
+
+const Sagewold = localFont({
+  src: [
+    {
+      path: "../public/fonts/Sagewold.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Sagewold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+});
 
 export default function Home() {
   const advantagesRef = useRef<HTMLDivElement>(null);
@@ -41,15 +59,17 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <Image
-              src="/placeholder.svg?height=60&width=60"
+              src="/img/cherylogo.png"
               alt="ICBCoin Logo"
               width={60}
               height={60}
               className="object-contain"
             />
             <div>
-              <h1 className="text-2xl font-bold tracking-tighter">ЭКВИ</h1>
-              <p className="text-xs">Инновационная модель дохода</p>
+              <h1 className="text-2xl font-bold tracking-tighter">ЭКВИ`C</h1>
+              <p className={Sagewold.className + " text-[20px]/4"}>
+                источник дохода
+              </p>
             </div>
           </motion.div>
 
@@ -77,7 +97,7 @@ export default function Home() {
                 onClick={() => scrollToSection("#app-showcase")}
                 className="hover:text-gray-600"
               >
-                ЭКВИ PAY'S
+                ЭКВИсофт
               </button>
             </ul>
           </motion.nav>
@@ -88,7 +108,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="mt-20 mb-[135px] relative">
+      <section className="mt-10 mb-[135px] relative">
         <div className="absolute -left-20 -top-20 w-full h-full">
           <Image
             src="/svg/background1.svg"
@@ -97,47 +117,67 @@ export default function Home() {
             height={100}
           />
         </div>
-        <div className="container mx-auto px-4 max-w-[1440px]">
-          <div className="grid justify-center md:grid-cols-2 gap-8 items-center">
+        <div className="container pr-4 min-[905px]:pl-20 max-w-[1440px]">
+          <div className="relative grid justify-center md:grid-cols-2 gap-8 items-center">
             {/* Left Content */}
             <AnimatedSection>
               <div className="relative z-10">
                 <div className="relative">
-                  <h2 className="text-4xl lg:text-5xl leading-10 font-bold mb-6">
-                    ЭКОСИСТЕМА ЭКВИ
+                  <h2 className="text-4xl lg:text-5xl leading-10 font-bold mb-4 xs:mb-6">
+                    Система ЭКВИ’С
                   </h2>
-                  <p className="text-lg lg:text-2xl mb-8 max-w-md">
-                    ИННОВАЦИОННАЯ МОДЕЛЬ ДОХОДА И НОВЫЙ ВИД НЕДВИЖИМОСТИ
+                  <p
+                    className={
+                      Sagewold.className +
+                      " text-[32px]/6 lg:text-[46px]/8 mb-4 xs:mb-6 max-w-md"
+                    }
+                  >
+                    обеспечивает гарантируемый доход с первого дня
+                    иcпользования!
                   </p>
 
                   <motion.div
-                    className="inline-flex rounded-md overflow-hidden"
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="bg-green-500 text-white px-4 py-2 flex items-center">
-                      <Image
-                        src="/placeholder.svg?height=24&width=24"
-                        alt="ЭКВИ icon"
-                        width={24}
-                        height={24}
-                        className="mr-2"
-                      />
-                      <span>ЭКВИ</span>
-                    </div>
-                    <div className="bg-gray-300 px-4 py-2">
-                      <span className="text-sm">
-                        попробуйте, это абсолютно бесплатно
-                      </span>
-                    </div>
+                    <Link
+                      href="https://t.me/icbprof_bot?start=001"
+                      className="inline-flex rounded-md overflow-hidden cursor-pointer"
+                    >
+                      <div
+                        className={
+                          Sagewold.className +
+                          " bg-green-500 text-white px-4 py-2 flex items-center"
+                        }
+                      >
+                        <Image
+                          src="/img/cherylogo.png"
+                          alt="ЭКВИ icon"
+                          width={24}
+                          height={24}
+                          className="mr-2"
+                        />
+                        <span className="text-3xl baseline">попробовать</span>
+                      </div>
+                      <div
+                        className={
+                          Sagewold.className + " bg-gray-300 px-4 py-2"
+                        }
+                      >
+                        <span className="text-2xl/10">
+                          это абсолютно бесплатно
+                        </span>
+                      </div>
+                    </Link>
                   </motion.div>
                 </div>
               </div>
             </AnimatedSection>
 
             {/* Right Image Grid */}
-            <AnimatedSection delay={0.2}>
-              <div className="relative overflow-hidden h-[720px]">
+            <div className="h-[620px] invisible"></div>
+            <AnimatedSection delay={0.2} className="max-[1086px]:absolute top-0 right-0">
+              <div className="relative overflow-hidden h-[620px]">
                 <div className="grid grid-cols-2 gap-2 justify-self-end w-fit">
                   {/* Левая колонка (вверх) */}
                   <div className="h-full animate-scroll-up">

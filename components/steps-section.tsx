@@ -116,13 +116,8 @@ export default function StepsSection() {
 
         {/* Registration Banner */}
         <AnimatedSection delay={0.5}>
-          <motion.div
+          <div
             className="bg-green-500 rounded-lg p-6 flex flex-col md:flex-row items-center justify-between"
-            whileHover={{
-              scale: 1.02,
-              boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
-            }}
-            transition={{ duration: 0.3 }}
           >
             <div className="text-white text-xs lg:text-base font-medium mb-4 md:mb-0 text-center md:text-left">
               <p>ЗАРЕГИСТРИРУЙТЕСЬ ЗА 2 МИНУТЫ –</p>
@@ -131,7 +126,7 @@ export default function StepsSection() {
 
             <div className="mb-4 md:mb-0">
               <Image
-                src="/placeholder.svg?height=80&width=80"
+                src="/img/cherylogo.png"
                 alt="ЭКВИ Coin"
                 width={80}
                 height={80}
@@ -145,7 +140,7 @@ export default function StepsSection() {
             >
               ПЕРЕЙТИ К ПРИЛОЖЕНИЮ
             </Link>
-          </motion.div>
+          </div>
         </AnimatedSection>
       </div>
     </section>
