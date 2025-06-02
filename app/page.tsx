@@ -66,7 +66,9 @@ export default function Home() {
               className="object-contain"
             />
             <div>
-              <h1 className="text-2xl font-bold tracking-tighter">ЭКВИ`C</h1>
+              <h1 className="text-2xl font-bold tracking-tighter">
+                ЭКВИ`C
+              </h1>
               <p className={Sagewold.className + " text-[20px]/4"}>
                 источник дохода
               </p>
@@ -117,19 +119,21 @@ export default function Home() {
             height={100}
           />
         </div>
-        <div className="container pr-4 min-[905px]:pl-20 max-w-[1440px]">
-          <div className="relative grid justify-center md:grid-cols-2 gap-8 items-center">
+        <div className="container px-4 max-w-[1440px] min-h-[620px]">
+          <div className="relative flex gap-8 items-center">
             {/* Left Content */}
             <AnimatedSection>
-              <div className="relative z-10">
-                <div className="relative">
-                  <h2 className="text-4xl lg:text-5xl leading-10 font-bold mb-4 xs:mb-6">
-                    Система ЭКВИ’С
-                  </h2>
+              <div className="relative z-10 mt-20">
+                <div className="relative max-[768px]:flex justify-center flex-col max-[485px]:text-center">
+                  <p className={Sagewold.className +
+                      " text-[32px]/6 sm:text-[46px]/8 mb-6 xs:mb-8"}>
+                    доходная среда
+                  </p>
+                  <h1 className="text-6xl sm:text-8xl leading-10 font-bold mb-6">ЭКВИ`C</h1>
                   <p
                     className={
                       Sagewold.className +
-                      " text-[32px]/6 lg:text-[46px]/8 mb-4 xs:mb-6 max-w-md"
+                      " text-[32px]/6 sm:text-[46px]/8 text-[#222222] mb-6 xs:mb-8 max-w-[520px]"
                     }
                   >
                     обеспечивает гарантируемый доход с первого дня
@@ -137,8 +141,9 @@ export default function Home() {
                   </p>
 
                   <motion.div
-                    whileHover={{ scale: 1.05 }}
+                    whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.3 }}
+                    className="max-sm:flex justify-center"
                   >
                     <Link
                       href="https://t.me/icbprof_bot?start=001"
@@ -161,12 +166,10 @@ export default function Home() {
                       </div>
                       <div
                         className={
-                          Sagewold.className + " bg-gray-300 px-4 py-2"
+                          Sagewold.className + " bg-gray-300 px-4 py-2 max-[360px]:hidden"
                         }
                       >
-                        <span className="text-2xl/10">
-                          это абсолютно бесплатно
-                        </span>
+                        <span className="text-2xl/10">это бесплатно</span>
                       </div>
                     </Link>
                   </motion.div>
@@ -175,12 +178,14 @@ export default function Home() {
             </AnimatedSection>
 
             {/* Right Image Grid */}
-            <div className="h-[620px] invisible"></div>
-            <AnimatedSection delay={0.2} className="max-[1086px]:absolute top-0 right-0">
-              <div className="relative overflow-hidden h-[620px]">
-                <div className="grid grid-cols-2 gap-2 justify-self-end w-fit">
+            <AnimatedSection
+              delay={0.2}
+              className="absolute top-0 right-0"
+            >
+              <div className="relative overflow-hidden h-[620px] max-[1090px]:bg-[url('/img/bg-main.png')] max-[1090px]:mask-top-fade-soft bg-cover bg-center mask-no-repeat">
+                <div className="grid grid-cols-2 gap-2 justify-self-end w-fit max-[1090px]:invisible">
                   {/* Левая колонка (вверх) */}
-                  <div className="h-full animate-scroll-up">
+                  <div className="h-full animate-scroll-up max-[1090px]:animate-none">
                     <div className="flex flex-col gap-2">
                       {Array(2)
                         .fill([
@@ -203,7 +208,7 @@ export default function Home() {
                   </div>
 
                   {/* Правая колонка (вниз) */}
-                  <div className="h-full animate-scroll-down">
+                  <div className="h-full animate-scroll-down max-[1090px]:animate-none">
                     <div className="flex flex-col gap-2 absolute bottom-0 right-0">
                       {Array(2)
                         .fill([

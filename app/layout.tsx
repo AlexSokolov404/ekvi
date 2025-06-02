@@ -20,8 +20,8 @@ const GreenHillSans = localFont({
 });
 
 export const metadata = {
-  title: "ICBCoin - International Crypto Bank Coin",
-  description: "Инновационная модель дохода и новый вид недвижимости",
+  title: "ЭКВИ`С",
+  description: "Источник дохода ЭКВИ`С, новый вид недвижимости",
     generator: 'SokolikTeam'
 }
 

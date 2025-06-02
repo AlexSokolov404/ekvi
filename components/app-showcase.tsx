@@ -98,10 +98,10 @@ export default function AppShowcase() {
         <AnimatedSection delay={0.3}>
           <div className="flex max-[690px]:flex-col justify-center items-center gap-4 mt-12 relative z-10">
             <Link
-              href="#"
+              href="https://icbprofit.com/login"
               className="w-[206px] flex items-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
             >
-              <div className="mr-3 text-2xl font-bold">3</div>
+              <div className="mr-3 text-2xl font-bold">Э</div>
               <div>
                 <div className="text-xs">Личный кабинет</div>
                 <div className="font-bold">ЭКВИ PAY'S</div>
@@ -109,7 +109,7 @@ export default function AppShowcase() {
             </Link>
 
             <Link
-              href="#"
+              href="https://apkfab.com/equi/com.EQUI.myapp/apk?h=dfaf0a422864db522b4922dda9bc74c3ecfccaf79662485e8d87ce8c92b5a563"
               className="w-[206px] flex items-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
             >
               <div className="mr-3">
@@ -127,7 +127,7 @@ export default function AppShowcase() {
             </Link>
 
             <Link
-              href="#"
+              href="https://t.me/icbprof_bot?start=001"
               className="w-[206px] flex items-center bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
             >
               <div className="mr-3">

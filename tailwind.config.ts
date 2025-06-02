@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config, PluginAPI } from "tailwindcss/types/config";
 
 const config = {
   darkMode: ["class"],
@@ -91,7 +91,21 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function (api: PluginAPI) {
+      api.addUtilities({
+        ".mask-top-fade-soft": {
+          maskImage:
+            "linear-gradient(to top, white 40%, rgba(255,255,255,0.7) 50%, transparent 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to top, white 40%, rgba(255,255,255,0.7) 50%, transparent 100%)",
+          maskMode: "luminance",
+          WebkitMaskMode: "luminance",
+        },
+      });
+    },
+  ],
 } satisfies Config;
 
 export default config;
