@@ -57,6 +57,10 @@ const config = {
           500: "#10b981",
         },
       },
+      fontFamily: {
+        sagewold: ["var(--font-sagewold)"],
+        akrobat: ["var(--font-akrobat)"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",

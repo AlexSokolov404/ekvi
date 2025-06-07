@@ -32,7 +32,7 @@ export default function AdvantagesSection() {
             className="md:col-span-1 lg:col-span-2 xl:col-span-2 2xl:col-span-2"
           >
             <motion.div
-              className="bg-[#2D2D2D80] grid grid-rows-2 rounded-lg overflow-hidden h-full"
+              className="bg-gray-200 grid grid-rows-2 rounded-lg overflow-hidden h-full"
               whileHover={{
                 y: -5,
                 boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
@@ -53,11 +53,10 @@ export default function AdvantagesSection() {
                   />
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-white text-sm text-base/7">
-                  УЧАСТНИКИ ПОЛУЧАЮТ ДОХОД СРАЗУ ПОСЛЕ РЕГИСТРАЦИИ, благодаря
-                  высокому спросу и бесплатному капиталу сразу после
-                  регистрации.
+              <div className="p-4 sm:p-6">
+                <p className="text-xl/5 md:text-2xl/6 font-akrobat font-bold">
+                  Участники получают ДОХОД СРАЗУ, благодаря высокому спросу и
+                  бесплатному капиталу сразу после начала использования системы.
                 </p>
               </div>
             </motion.div>
@@ -69,7 +68,7 @@ export default function AdvantagesSection() {
             className="md:col-span-1 lg:col-span-2 xl:col-span-4 2xl:col-span-4"
           >
             <motion.div
-              className="bg-[#2D2D2D80] grid grid-rows-2 rounded-lg overflow-hidden h-full"
+              className="bg-gray-200 grid grid-rows-2 rounded-lg overflow-hidden h-full"
               whileHover={{
                 y: -5,
                 boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
@@ -90,12 +89,11 @@ export default function AdvantagesSection() {
                   />
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-white text-sm text-base/7">
-                  СИСТЕМА ЭКВИ ИСКЛЮЧАЕТ ВЕРОЯТНОСТЬ СНИЖЕНИЯ СТОИМОСТИ АКТИВОВ
-                  ИЛИ ФИНАНСОВЫХ ПОТЕРЬ: ВАШИ ИНВЕСТИЦИИ ОБЕСПЕЧЕНЫ РЕАЛЬНОЙ
-                  НЕДВИЖИМОСТЬЮ И ВНУТРЕННИМИ РЕСУРСАМИ ВРЕМЕНИ, КОТОРЫЕ
-                  ПОЛНОСТЬЮ ОБЕСПЕЧЕНЫ ДЕНЕЖНЫМИ СРЕДСТВАМИ И СПРОСОМ
+              <div className="p-4 sm:p-6">
+                <p className="text-xl/5 md:text-2xl/6 font-akrobat font-bold">
+                  Валюта учета ЭКВИ исключает вероятность снижения стоимости
+                  активов или финансовых потерь: ваши инвестиции обеспечены
+                  реальной недвижимостью и внутренними ресурсами времени
                 </p>
               </div>
             </motion.div>
@@ -107,7 +105,7 @@ export default function AdvantagesSection() {
             className="md:col-span-1 lg:col-span-2 xl:col-span-2 2xl:col-span-2"
           >
             <motion.div
-              className="bg-[#2D2D2D80] grid grid-rows-2 rounded-lg overflow-hidden h-full"
+              className="bg-gray-200 grid grid-rows-2 rounded-lg overflow-hidden h-full"
               whileHover={{
                 y: -5,
                 boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
@@ -128,10 +126,10 @@ export default function AdvantagesSection() {
                   />
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-white text-sm text-base/7">
-                  СИСТЕМА РАЗРАБОТАНА СОГЛАСНО ДЕЙСТВУЮЩЕМУ ЗАКОНОДАТЕЛЬСТВУ ДЛЯ
-                  ЗАЩИТЫ ИНТЕРЕСОВ УЧАСТНИКОВ
+              <div className="p-4 sm:p-6">
+                <p className="text-xl/5 md:text-2xl/6 font-akrobat font-bold">
+                  Система разрабона согласно действующему законодательству для
+                  защиты интересов участников
                 </p>
               </div>
             </motion.div>
@@ -143,7 +141,7 @@ export default function AdvantagesSection() {
             className="md:col-span-1 lg:col-span-2 xl:col-span-4 2xl:col-span-4"
           >
             <motion.div
-              className="bg-[#2D2D2D80] grid grid-rows-2 rounded-lg overflow-hidden h-full"
+              className="bg-gray-200 grid grid-rows-2 rounded-lg overflow-hidden h-full"
               whileHover={{
                 y: -5,
                 boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
@@ -164,8 +162,8 @@ export default function AdvantagesSection() {
                   />
                 </div>
               </div>
-              <div className=" p-6">
-                <p className="text-white text-sm  text-base/7">
+              <div className="p-4 sm:p-6">
+                <p className="text-xl/5 md:text-2xl/6 font-akrobat font-bold">
                   - ЭК (Эксклюзивный Кондоминиум): Минимальная доля доходной
                   недвижимости. <br /> - ВИ (Время Использования): Активная
                   часть валюты, которая учитывает время использования
@@ -181,7 +179,7 @@ export default function AdvantagesSection() {
             className="md:col-span-1 lg:col-span-2 xl:col-span-4 2xl:col-span-4"
           >
             <motion.div
-              className="bg-[#2D2D2D80] grid grid-rows-2 rounded-lg overflow-hidden h-full"
+              className="bg-gray-200 grid grid-rows-2 rounded-lg overflow-hidden h-full"
               whileHover={{
                 y: -5,
                 boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
@@ -202,12 +200,12 @@ export default function AdvantagesSection() {
                   />
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-white text-sm text-base/7">
-                  ЭКВИ ВЫКУПАЕТ ВРЕМЯ, КОТОРОЕ ИСПОЛЬЗУЕТСЯ ДЛЯ ПОКУПКИ
-                  НЕДВИЖИМОСТИ И УРАВНИВАНИЯ БАЛАНСОВ: ЧАСТЬ ВРЕМЕНИ
-                  ВОЗВРАЩАЕТСЯ В ПРОДАЖИ ПО БОЛЕЕ ВЫСОКОЙ ЦЕНЕ ДЛЯ СПРАВЕДЛИВОГО
-                  РАСПРЕДЕЛЕНИЯ ДОХОДА МЕЖДУ УЧАСТНИКАМИ
+              <div className="p-4 sm:p-6">
+                <p className="text-xl/5 md:text-2xl/6 font-akrobat font-bold">
+                  ЭКВИ выкупает время, которое используется для покупки
+                  недвижимости и уравнивания балансов: часть времени
+                  возвращается в продажи по более высокой цене для справедливого
+                  распределения дохода между участниками
                 </p>
               </div>
             </motion.div>
@@ -219,7 +217,7 @@ export default function AdvantagesSection() {
             className="md:col-span-1 lg:col-span-2 xl:col-start-2 xl:col-end-8"
           >
             <motion.div
-              className="bg-[#2D2D2D80] grid grid-rows-2 rounded-lg overflow-hidden"
+              className="bg-gray-200 grid grid-rows-2 rounded-lg overflow-hidden"
               whileHover={{
                 y: -5,
                 boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1)",
@@ -240,13 +238,13 @@ export default function AdvantagesSection() {
                   />
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-white text-sm text-base/7">
-                  НА РЫНКЕ НЕТ АНАЛОГОВ СИСТЕМЫ ЭКВИ. АВТОМАТИЧЕСКАЯ ЭМИССИЯ
-                  ЧЕРЕЗ ТОРГИ: УПРАВЛЯЮЩАЯ КОМПАНИЯ ВЫКУПАЕТ ВРЕМЯ И
-                  ВОЗОБНОВЛЯЕТ ЕГО В ПРОДАЖЕ ПО ПОВЫШЕННОЙ ЦЕНЕ, СОЗДАВАЯ
-                  ЦЕННОСТЬ ЭКВИ И ДОПОЛНИТЕЛЬНЫЙ ДОХОД УЧАСТНИКАМ, СОХРАНЯЯ
-                  ПОЛНОЕ ОБЕСПЕЧЕНИЕ И РАБОТАЯ ИСКЛЮЧИТЕЛЬНО НА БЛАГО УЧАСТНИКОВ
+              <div className="p-4 sm:p-6">
+                <p className="text-xl/5 md:text-2xl/6 font-akrobat font-bold">
+                  На рынке нет аналогов системы ЭКВИ`C. Автоматическая эмиссия
+                  через торги: управляющая компания выкупает время и выставляет
+                  его на продажу по повышенной цене, создавая ценность ЭКВИ и
+                  дополнительный доход участникам, сохраняя полное обеспечение и
+                  работая исключительно на благо участников
                 </p>
               </div>
             </motion.div>

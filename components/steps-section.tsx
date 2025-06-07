@@ -32,7 +32,7 @@ export default function StepsSection() {
                   className="mx-auto"
                 />
               </div>
-              <p className="text-center text-xs lg:text-base font-medium min-w-[220px]">
+              <p className="text-center text-sm lg:text-base font-medium min-w-[220px]">
                 ЗАРЕГИСТРИРУЙТЕСЬ
               </p>
             </motion.div>
@@ -57,7 +57,7 @@ export default function StepsSection() {
                   className="mx-auto"
                 />
               </div>
-              <p className="text-center text-xs lg:text-base font-medium max-w-[220px]">
+              <p className="text-center text-sm lg:text-base font-medium max-w-[220px]">
                 ПОЛУЧИТЕ СТАРТОВЫЙ КАПИТАЛ В ПОДАРОК
               </p>
             </motion.div>
@@ -82,7 +82,7 @@ export default function StepsSection() {
                   className="mx-auto"
                 />
               </div>
-              <p className="text-center text-xs lg:text-base font-medium max-w-[220px]">
+              <p className="text-center text-sm lg:text-base font-medium max-w-[220px]">
                 ПРИОБРЕТАЙТЕ БОЛЬШЕ ЭКВИ ИЛИ ЗАРАБАТЫВАЙТЕ НА СВОИХ АКТИВАХ
               </p>
             </motion.div>
@@ -107,7 +107,7 @@ export default function StepsSection() {
                   className="mx-auto"
                 />
               </div>
-              <p className="text-center text-xs lg:text-base font-medium max-w-[220px]">
+              <p className="text-center text-sm lg:text-base font-medium max-w-[220px]">
                 ПРОДАВАЙТЕ ЭКВИ В ЛЮБОЙ РАБОЧИЙ ДЕНЬ
               </p>
             </motion.div>
@@ -119,7 +119,7 @@ export default function StepsSection() {
           <div
             className="bg-green-500 rounded-lg p-6 flex flex-col md:flex-row items-center justify-between"
           >
-            <div className="text-white text-xs lg:text-base font-medium mb-4 md:mb-0 text-center md:text-left">
+            <div className="text-white text-sm lg:text-base font-medium mb-4 md:mb-0 text-center md:text-left">
               <p>ЗАРЕГИСТРИРУЙТЕСЬ ЗА 2 МИНУТЫ –</p>
               <p>ПРОСТО ПЕРЕЙДИТЕ В ПРИЛОЖЕНИЕ</p>
             </div>
@@ -136,7 +136,7 @@ export default function StepsSection() {
 
             <Link
               href="https://t.me/icbprof_bot?start=001"
-              className="bg-yellow-400 hover:bg-yellow-500 text-xs lg:text-base text-white font-medium px-6 py-3 rounded-lg transition-colors"
+              className="bg-yellow-400 hover:bg-yellow-500 text-sm lg:text-base text-white font-medium px-6 py-3 rounded-lg transition-colors"
             >
               ПЕРЕЙТИ К ПРИЛОЖЕНИЮ
             </Link>

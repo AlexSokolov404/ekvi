@@ -5,26 +5,9 @@ import Image from "next/image";
 import { ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedSection from "./animated-section";
-import localFont from "next/font/local";
 
 // Tab content types
 type TabType = "opportunities" | "howItWorks" | "facts";
-
-const Sagewold = localFont({
-  src: [
-    {
-      path: "../public/fonts/Sagewold.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/Sagewold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  display: "swap",
-});
 
 export default function InformationSection() {
   const [activeTab, setActiveTab] = useState<TabType>("opportunities");
@@ -112,17 +95,12 @@ export default function InformationSection() {
                     }}
                   >
                     <div className="p-6">
-                      <h3 className="text-sm  md:text-lg font-bold mb-2">
+                      <h3 className="lg:text-lg font-bold mb-2">
                         ИСПОЛЬЗОВАНИЕ НЕДВИЖИМОСТИ И ВРЕМЕНИ ПОЛЬЗОВАНИЯ КАК
                         СРЕДСТВА ОБМЕНА
                       </h3>
                     </div>
-                    <div
-                      className={
-                        Sagewold.className +
-                        " p-6 bg-gray-300 text-xl/5 md:text-2xl/6"
-                      }
-                    >
+                    <div className="p-6 bg-gray-300 text-xl/5 md:text-2xl/6 font-akrobat font-bold">
                       <p>
                         Экви, благодаря своему двойному номиналу, позволяет
                         использовать недвижимость и время ее использования как
@@ -143,16 +121,11 @@ export default function InformationSection() {
                     }}
                   >
                     <div className="p-6">
-                      <h3 className="text-sm  md:text-lg font-bold mb-2">
+                      <h3 className="lg:text-lg font-bold mb-2">
                         ГИБКИЕ УСЛОВИЯ АРЕНДЫ И ВЛАДЕНИЯ
                       </h3>
                     </div>
-                    <div
-                      className={
-                        Sagewold.className +
-                        " p-6 bg-gray-300 text-xl/5 md:text-2xl/6"
-                      }
-                    >
+                    <div className="p-6 bg-gray-300 text-xl/5 md:text-2xl/6 font-akrobat font-bold">
                       <p>
                         Использование недвижимости на любые сроки для любых
                         целей благодаря индивидуальным условиям аренды
@@ -172,16 +145,11 @@ export default function InformationSection() {
                     }}
                   >
                     <div className="p-6">
-                      <h3 className="text-sm  md:text-lg font-bold mb-2">
+                      <h3 className="lg:text-lg font-bold mb-2">
                         НОВЫЕ ВОЗМОЖНОСТИ ДЛЯ ИНВЕСТИРОВАНИЯ
                       </h3>
                     </div>
-                    <div
-                      className={
-                        Sagewold.className +
-                        " p-6 bg-gray-300 text-xl/5 md:text-2xl/6"
-                      }
-                    >
+                    <div className="p-6 bg-gray-300 text-xl/5 md:text-2xl/6 font-akrobat font-bold">
                       <p>
                         Начните инвестировать в недвижимость с небольших сумм —
                         прирост дохода доступен каждому! Кроме приобретения
@@ -202,17 +170,12 @@ export default function InformationSection() {
                     }}
                   >
                     <div className="p-6">
-                      <h3 className="text-sm  md:text-lg font-bold mb-2">
+                      <h3 className="lg:text-lg font-bold mb-2">
                         АВТОМАТИЧЕСКАЯ ТОРГОВЛЯ ВРЕМЕНЕМ ЧЕРЕЗ ВЫКУП
                         НЕДВИЖИМОСТИ
                       </h3>
                     </div>
-                    <div
-                      className={
-                        Sagewold.className +
-                        " p-6 bg-gray-300 text-xl/5 md:text-2xl/6"
-                      }
-                    >
+                    <div className="p-6 bg-gray-300 text-xl/5 md:text-2xl/6 font-akrobat font-bold">
                       <p>
                         Формула внутренних торгов временем через выкуп
                         недвижимости не имеет аналогов: она эксклюзивно
@@ -232,16 +195,11 @@ export default function InformationSection() {
                     }}
                   >
                     <div className="p-6">
-                      <h3 className="text-sm  md:text-lg font-bold mb-2">
+                      <h3 className="lg:text-lg font-bold mb-2">
                         СИСТЕМА ПРИНАДЛЕЖИТ УЧАСТНИКАМ
                       </h3>
                     </div>
-                    <div
-                      className={
-                        Sagewold.className +
-                        " p-6 bg-gray-300 text-xl/5 md:text-2xl/6"
-                      }
-                    >
+                    <div className="p-6 bg-gray-300 text-xl/5 md:text-2xl/6 font-akrobat font-bold">
                       <p>
                         При регистрации каждый участник получает стартовый
                         капитал и долю в системе — что гарантирует доход с
@@ -278,11 +236,7 @@ export default function InformationSection() {
                       <h3 className="lg:text-lg font-bold">
                         АВТОМАТИЧЕСКАЯ ЭМИССИЯ ДОХОДА
                       </h3>
-                      <p
-                        className={
-                          Sagewold.className + " text-xl/5 md:text-2xl/5"
-                        }
-                      >
+                      <p className=" text-xl/5 md:text-2xl/5 font-akrobat font-bold">
                         Процесс создания новых ЭКВИ происходит аввтоматически
                         при взаимодействии ресурсов времени и недвижимости.
                         Эмиссия ЭКВИ автоматическая и зависит от работы двух
@@ -313,11 +267,7 @@ export default function InformationSection() {
                   >
                     <div className="flex flex-col max-w-[411px] gap-2">
                       <h3 className="lg:text-lg font-bold">ВАЛЮТА ВРЕМЕНИ</h3>
-                      <p
-                        className={
-                          Sagewold.className + " text-xl/5 md:text-2xl/5"
-                        }
-                      >
+                      <p className="text-xl/5 md:text-2xl/5 font-akrobat font-bold">
                         Валюта времени - это один из номиналов валюты учета
                         ЭКВИ, фиксированное количество которой используется для
                         покупки права на использование недвижимости на
@@ -350,11 +300,7 @@ export default function InformationSection() {
                       <h3 className="lg:text-lg font-bold">
                         УПРАВЛЕНИЕ И ОБСЛУЖИВАНИЕ ОБЪЕКТОВ
                       </h3>
-                      <p
-                        className={
-                          Sagewold.className + " text-xl/5 md:text-2xl/5"
-                        }
-                      >
+                      <p className="text-xl/5 md:text-2xl/5 font-akrobat font-bold">
                         Управляющая компания кооператива берет на себя
                         управление всеми процессами обслуживания объектов — вся
                         информация хранится защищенно. Она также выкупает время
@@ -387,11 +333,7 @@ export default function InformationSection() {
                       <h3 className="lg:text-lg font-bold">
                         ЦЕПОЧКА СОЗДАНИЯ ЦЕННОСТИ
                       </h3>
-                      <p
-                        className={
-                          Sagewold.className + " text-xl/5 md:text-2xl/5"
-                        }
-                      >
+                      <p className="text-xl/5 md:text-2xl/5 font-akrobat font-bold">
                         Экви выкупает время, которое затем используется для
                         покупки недвижимости и уравнивания балансов: часть
                         времени возвращается в продажи по более высокой цене для
@@ -430,7 +372,7 @@ export default function InformationSection() {
                       onClick={() => toggleAccordion("item1")}
                       whileHover={{ backgroundColor: "rgba(0,0,0,0.05)" }}
                     >
-                      <h3 className="text-sm md:text-lg font-bold">
+                      <h3 className="text-base md:text-xl font-bold">
                         СБАЛАНСИРОВАННАЯ СИСТЕМА УПРАВЛЕНИЯ АКТИВАМИ
                       </h3>
                       <motion.div
@@ -448,12 +390,7 @@ export default function InformationSection() {
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
                         >
-                          <div
-                            className={
-                              Sagewold.className +
-                              " p-6 bg-gray-200 text-2xl/5 md:text-3xl/6"
-                            }
-                          >
+                          <div className="p-6 bg-gray-200 text-xl/5 md:text-2xl/6 font-akrobat font-bold">
                             <p>
                               Управляющая компания кооператива берет на себя
                               управление всеми процессами обслуживания объектов
@@ -476,7 +413,7 @@ export default function InformationSection() {
                       onClick={() => toggleAccordion("item2")}
                       whileHover={{ backgroundColor: "rgba(0,0,0,0.05)" }}
                     >
-                      <h3 className="text-sm md:text-lg font-bold">
+                      <h3 className="text-base md:text-xl font-bold">
                         ВСЕ НЕОБХОДИМЫЕ ТЕХНОЛОГИИ НА ОДНОЙ ПЛАТФОРМЕ
                       </h3>
                       <motion.div
@@ -494,12 +431,7 @@ export default function InformationSection() {
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
                         >
-                          <div
-                            className={
-                              Sagewold.className +
-                              " p-6 bg-gray-200 text-2xl/5 md:text-3xl/6"
-                            }
-                          >
+                          <div className="p-6 bg-gray-200 text-xl/5 md:text-2xl/6 font-akrobat font-bold">
                             <p>
                               Платформа объединяет передовые решения в области
                               математики, экономики, права, автоматизации
@@ -521,7 +453,7 @@ export default function InformationSection() {
                       onClick={() => toggleAccordion("item3")}
                       whileHover={{ backgroundColor: "rgba(0,0,0,0.05)" }}
                     >
-                      <h3 className="text-sm md:text-lg font-bold">
+                      <h3 className="text-base md:text-xl font-bold">
                         ВЫСОКАЯ СТЕПЕНЬ ЗАЩИТЫ ВАШИХ ИНВЕСТИЦИЙ
                       </h3>
                       <motion.div
@@ -539,12 +471,7 @@ export default function InformationSection() {
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
                         >
-                          <div
-                            className={
-                              Sagewold.className +
-                              " p-6 bg-gray-200 text-2xl/5 md:text-3xl/6"
-                            }
-                          >
+                          <div className="p-6 bg-gray-200 text-xl/5 md:text-2xl/6 font-akrobat font-bold">
                             <p>
                               Ваша безопасность — приоритет платформы:
                               применяются современные механизмы защиты для
@@ -568,7 +495,7 @@ export default function InformationSection() {
                       onClick={() => toggleAccordion("item4")}
                       whileHover={{ backgroundColor: "rgba(0,0,0,0.05)" }}
                     >
-                      <h3 className="text-sm md:text-lg font-bold">
+                      <h3 className="text-base md:text-xl font-bold">
                         НЕ УПУСТИТЕ ВОЗМОЖНОСТЬ СТАТЬ ЧАСТЬЮ ИННОВАЦИЙ
                       </h3>
                       <motion.div
@@ -586,14 +513,9 @@ export default function InformationSection() {
                           exit={{ height: 0, opacity: 0 }}
                           transition={{ duration: 0.3 }}
                         >
-                          <div
-                            className={
-                              Sagewold.className +
-                              " p-6 bg-gray-200 text-2xl/5 md:text-3xl/6"
-                            }
-                          >
+                          <div className="p-6 bg-gray-200 text-xl/5 md:text-2xl/6 font-akrobat font-bold">
                             <p>
-                              Присоединяйтесь к системе экви, которая меняет
+                              Присоединяйтесь к системе ЭКВИ`C, которая меняет
                               правила игры на рынке недвижимости, инвестиций,
                               криптовалюты, финансовых технологий, недвижимости
                               и многих других сфер

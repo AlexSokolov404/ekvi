@@ -20,11 +20,6 @@ const Sagewold = localFont({
       weight: "400",
       style: "normal",
     },
-    {
-      path: "../public/fonts/Sagewold.ttf",
-      weight: "700",
-      style: "normal",
-    },
   ],
   display: "swap",
 });
@@ -47,6 +42,15 @@ export default function Home() {
     }
   };
 
+  const handleIdClick = (href: string) => {
+    setTimeout(() => {
+      const element = document.getElementById(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
+  };
+
   return (
     <main className="min-h-screen">
       {/* Header */}
@@ -57,6 +61,7 @@ export default function Home() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
+            onClick={() => handleIdClick("top-main")}
           >
             <Image
               src="/img/cherylogo.png"
@@ -66,11 +71,9 @@ export default function Home() {
               className="object-contain"
             />
             <div>
-              <h1 className="text-2xl font-bold tracking-tighter">
-                ЭКВИ`C
-              </h1>
+              <h1 className="text-2xl font-bold tracking-tighter">ЭКВИ`C</h1>
               <p className={Sagewold.className + " text-[20px]/4"}>
-                источник дохода
+                доходная среда
               </p>
             </div>
           </motion.div>
@@ -111,7 +114,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="mt-10 mb-[135px] relative">
-        <div className="absolute -left-20 -top-20 w-full h-full">
+        <div className="absolute -left-20 -top-20 w-full h-full" id="top-main">
           <Image
             src="/svg/background1.svg"
             alt="Decorative waves"
@@ -125,11 +128,17 @@ export default function Home() {
             <AnimatedSection>
               <div className="relative z-10 mt-20">
                 <div className="relative max-[768px]:flex justify-center flex-col max-[485px]:text-center">
-                  <p className={Sagewold.className +
-                      " text-[32px]/6 sm:text-[46px]/8 mb-6 xs:mb-8"}>
+                  <p
+                    className={
+                      Sagewold.className +
+                      " text-[32px]/6 sm:text-[46px]/8 mb-6 xs:mb-8"
+                    }
+                  >
                     доходная среда
                   </p>
-                  <h1 className="text-6xl sm:text-8xl leading-10 font-bold mb-6">ЭКВИ`C</h1>
+                  <h1 className="text-6xl sm:text-8xl leading-10 font-bold mb-6">
+                    ЭКВИ`C
+                  </h1>
                   <p
                     className={
                       Sagewold.className +
@@ -166,7 +175,8 @@ export default function Home() {
                       </div>
                       <div
                         className={
-                          Sagewold.className + " bg-gray-300 px-4 py-2 max-[360px]:hidden"
+                          Sagewold.className +
+                          " bg-gray-300 px-4 py-2 max-[360px]:hidden"
                         }
                       >
                         <span className="text-2xl/10">это бесплатно</span>
@@ -178,10 +188,7 @@ export default function Home() {
             </AnimatedSection>
 
             {/* Right Image Grid */}
-            <AnimatedSection
-              delay={0.2}
-              className="absolute top-0 right-0"
-            >
+            <AnimatedSection delay={0.2} className="absolute top-0 right-0">
               <div className="relative overflow-hidden h-[620px] max-[1090px]:bg-[url('/img/bg-main.png')] max-[1090px]:mask-top-fade-soft bg-cover bg-center mask-no-repeat">
                 <div className="grid grid-cols-2 gap-2 justify-self-end w-fit max-[1090px]:invisible">
                   {/* Левая колонка (вверх) */}
