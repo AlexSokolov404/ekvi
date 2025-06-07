@@ -24,7 +24,7 @@ export default function AppShowcase() {
         <div className="relative">
           {/* Phone Mockups */}
           <div className="absolute min-w-[1024px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="relative flex sm:gap-2 items-center justify-between sm:flex-row gap-10">
+            <div className="relative flex gap-2 items-center justify-between sm:flex-row">
               {/* Center Phone (Largest) */}
               <div className="order-3">
                 <AnimatedSection delay={0.2}>

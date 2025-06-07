@@ -77,7 +77,7 @@ export default function AdvantagesSection() {
             >
               <div className="bg-[#2D2D2D] p-6">
                 <h3 className="text-xl font-bold text-white mb-4">
-                  ВЫСОКАЯ СТЕПЕНЬ ЗАЩИТЫ ВАШИХ ИНВЕСТИЦИЙ
+                  ЗАЩИТА ВАШИХ ИНВЕСТИЦИЙ
                 </h3>
                 <div className="flex justify-center">
                   <Image
